@@ -13,7 +13,7 @@
 // to use a pin for both a digital button and analog
 // axis.  The pullup resistor will interfere with
 // the analog voltage.
-const int numButtons = 20;  // 16 for Teensy, 32 for Teensy++
+const int numButtons = 28;  // 16 for Teensy, 32 for Teensy++
 
 void setup() {
   // you can print to the serial monitor while the joystick is active!
