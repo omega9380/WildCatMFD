@@ -1,0 +1,9 @@
+ERC report (3/20/2021 9:30:28 PM, Encoding UTF8 )
+
+***** Sheet /
+ErrType(3): Pin connected to other pins, but not driven by any pin
+    @(180.34 mm, 38.10 mm): Pin 1 (Power input) of component U1 is not driven (Net 60).
+ErrType(12): Different net assigned to a shared pin in another unit of the same component
+    @(238.76 mm, 68.58 mm): Pin ~ on U1 is connected to both Net-(U1-Pad~) and GND
+
+ ** ERC messages: 2  Errors 1  Warnings 1
