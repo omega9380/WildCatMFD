@@ -24,8 +24,6 @@ F 3 "" H 8250 3700 60  0000 C CNN
 	1    8250 3650
 	1    0    0    -1  
 $EndComp
-Text GLabel 7100 1500 0    50   Input ~ 0
-GND
 Text GLabel 7100 1600 0    50   Input ~ 0
 JOY_01
 Text GLabel 7100 1700 0    50   Input ~ 0
@@ -34,16 +32,6 @@ Text GLabel 7100 1800 0    50   Input ~ 0
 JOY_03
 Text GLabel 7100 1900 0    50   Input ~ 0
 JOY_04
-Text GLabel 7100 4100 0    50   Input ~ 0
-GND
-Text GLabel 7100 5300 0    50   Input ~ 0
-GND
-Text GLabel 9400 2700 2    50   Input ~ 0
-GND
-Text GLabel 9400 3900 2    50   Input ~ 0
-GND
-Text GLabel 9400 4000 2    50   Input ~ 0
-GND
 Text GLabel 7100 2000 0    50   Input ~ 0
 JOY_05
 Text GLabel 7100 2100 0    50   Input ~ 0
@@ -58,23 +46,23 @@ Text GLabel 7100 2700 0    50   Input ~ 0
 JOY_12
 Text GLabel 7100 2800 0    50   Input ~ 0
 JOY_13
-Text GLabel 7100 2900 0    50   Input ~ 0
-JOY_14
 Text GLabel 7100 3000 0    50   Input ~ 0
-JOY_15
+JOY_14
 Text GLabel 7100 3100 0    50   Input ~ 0
-JOY_16
+JOY_15
 Text GLabel 7100 3200 0    50   Input ~ 0
-JOY_17
+JOY_16
 Text GLabel 7100 3300 0    50   Input ~ 0
-JOY_18
+JOY_17
 Text GLabel 7100 3400 0    50   Input ~ 0
-JOY_19
+JOY_18
 Text GLabel 7100 3500 0    50   Input ~ 0
-JOY_20
+JOY_19
 Text GLabel 7100 3600 0    50   Input ~ 0
-JOY_21
+JOY_20
 Text GLabel 7100 3700 0    50   Input ~ 0
+JOY_21
+Text GLabel 7100 3800 0    50   Input ~ 0
 JOY_22
 Text GLabel 7100 4400 0    50   Input ~ 0
 JOY_23
@@ -421,8 +409,6 @@ Wire Wire Line
 Wire Wire Line
 	4000 2500 4000 2900
 Connection ~ 4000 5000
-Wire Wire Line
-	4000 5000 3500 5000
 Connection ~ 4000 2900
 Wire Wire Line
 	4000 2900 4000 3300
@@ -547,23 +533,115 @@ JOY_28
 $Comp
 L power:GND #PWR01
 U 1 1 605CB188
-P 3500 5250
-F 0 "#PWR01" H 3500 5000 50  0001 C CNN
-F 1 "GND" H 3505 5077 50  0000 C CNN
-F 2 "" H 3500 5250 50  0001 C CNN
-F 3 "" H 3500 5250 50  0001 C CNN
-	1    3500 5250
+P 6200 6050
+F 0 "#PWR01" H 6200 5800 50  0001 C CNN
+F 1 "GND" H 6205 5877 50  0000 C CNN
+F 2 "" H 6200 6050 50  0001 C CNN
+F 3 "" H 6200 6050 50  0001 C CNN
+	1    6200 6050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3500 5250 3500 5000
-Connection ~ 3500 5000
-Wire Wire Line
-	3500 5000 3000 5000
 Text Notes 7350 7500 0    50   ~ 0
 WildCat MFD
 Text Notes 8150 7650 0    50   ~ 0
 March 20, 2021
 Text Notes 10550 7650 0    50   ~ 0
 1.0
+NoConn ~ 9400 4100
+NoConn ~ 9400 4200
+NoConn ~ 9400 4300
+NoConn ~ 9400 4600
+NoConn ~ 9400 4700
+NoConn ~ 9400 4800
+NoConn ~ 9400 4900
+NoConn ~ 9400 5000
+NoConn ~ 9400 5100
+NoConn ~ 9400 5200
+NoConn ~ 9400 5300
+NoConn ~ 9400 5400
+NoConn ~ 9400 5500
+NoConn ~ 9400 5600
+NoConn ~ 9400 5700
+NoConn ~ 9400 5800
+NoConn ~ 9400 3800
+NoConn ~ 9400 3700
+NoConn ~ 9400 3600
+NoConn ~ 9400 3500
+NoConn ~ 9400 3400
+NoConn ~ 9400 3300
+NoConn ~ 9400 3200
+NoConn ~ 9400 3100
+NoConn ~ 9400 3000
+NoConn ~ 9400 2900
+NoConn ~ 9400 2800
+NoConn ~ 9400 2600
+NoConn ~ 9400 2500
+NoConn ~ 9400 2400
+NoConn ~ 9400 2300
+NoConn ~ 9400 2200
+NoConn ~ 9400 2100
+NoConn ~ 9400 2000
+NoConn ~ 9400 1900
+NoConn ~ 9400 1800
+NoConn ~ 9400 1700
+NoConn ~ 9400 1600
+NoConn ~ 9400 1500
+NoConn ~ 7100 3900
+NoConn ~ 7100 4000
+NoConn ~ 7100 4200
+NoConn ~ 7100 4300
+NoConn ~ 7100 5000
+NoConn ~ 7100 5100
+NoConn ~ 7100 5200
+NoConn ~ 7100 5400
+NoConn ~ 7100 5500
+NoConn ~ 7100 5600
+NoConn ~ 7100 5700
+NoConn ~ 7100 5800
+NoConn ~ 7100 2900
+Wire Wire Line
+	3000 5000 3550 5000
+Wire Wire Line
+	6200 6050 3550 6050
+Wire Wire Line
+	3550 6050 3550 5000
+Connection ~ 3550 5000
+Wire Wire Line
+	3550 5000 4000 5000
+Wire Wire Line
+	7100 5300 7000 5300
+Wire Wire Line
+	7000 5300 7000 6050
+Wire Wire Line
+	7000 6050 6700 6050
+Connection ~ 6200 6050
+Wire Wire Line
+	7100 1500 6700 1500
+Wire Wire Line
+	6700 1500 6700 4100
+Connection ~ 6700 6050
+Wire Wire Line
+	6700 6050 6200 6050
+Wire Wire Line
+	7100 4100 6700 4100
+Connection ~ 6700 4100
+Wire Wire Line
+	6700 4100 6700 6050
+Wire Wire Line
+	7000 6050 9500 6050
+Wire Wire Line
+	9500 6050 9500 4000
+Wire Wire Line
+	9500 2700 9400 2700
+Connection ~ 7000 6050
+Wire Wire Line
+	9400 3900 9500 3900
+Connection ~ 9500 3900
+Wire Wire Line
+	9500 3900 9500 2700
+Wire Wire Line
+	9400 4000 9500 4000
+Connection ~ 9500 4000
+Wire Wire Line
+	9500 4000 9500 3900
 $EndSCHEMATC

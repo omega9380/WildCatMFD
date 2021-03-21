@@ -42,7 +42,7 @@ Text GLabel 7100 2400 0    50   Input ~ 0
 JOY_09
 Text GLabel 7100 2600 0    50   Input ~ 0
 JOY_11
-Text GLabel 7100 2700 0    50   Input ~ 0
+Text GLabel 7100 5000 0    50   Input ~ 0
 JOY_12
 Text GLabel 7100 2800 0    50   Input ~ 0
 JOY_13
@@ -590,7 +590,6 @@ NoConn ~ 7100 3900
 NoConn ~ 7100 4000
 NoConn ~ 7100 4200
 NoConn ~ 7100 4300
-NoConn ~ 7100 5000
 NoConn ~ 7100 5100
 NoConn ~ 7100 5200
 NoConn ~ 7100 5400
@@ -644,4 +643,5 @@ Wire Wire Line
 Connection ~ 9500 4000
 Wire Wire Line
 	9500 4000 9500 3900
+NoConn ~ 7100 2700
 $EndSCHEMATC
