@@ -13,17 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L teensy:Teensy3.6 U1
-U 1 1 60563F5D
-P 8250 3650
-F 0 "U1" H 8250 6193 60  0000 C CNN
-F 1 "Teensy3.6" H 8250 6087 60  0000 C CNN
-F 2 "teensy:Teensy35_36" H 8250 5981 60  0000 C CNN
-F 3 "" H 8250 3700 60  0000 C CNN
-	1    8250 3650
-	1    0    0    -1  
-$EndComp
 Text GLabel 7100 1800 0    50   Input ~ 0
 JOY_01
 Text GLabel 7100 1900 0    50   Input ~ 0
@@ -345,7 +334,6 @@ NoConn ~ 9400 4300
 NoConn ~ 9400 4600
 NoConn ~ 9400 4700
 NoConn ~ 9400 4800
-NoConn ~ 9400 4900
 NoConn ~ 9400 5000
 NoConn ~ 9400 5100
 NoConn ~ 9400 5200
@@ -393,19 +381,7 @@ Connection ~ 6700 4100
 Wire Wire Line
 	6700 4100 6700 5300
 Wire Wire Line
-	9500 6050 9500 4000
-Wire Wire Line
-	9500 2700 9400 2700
-Wire Wire Line
-	9400 3900 9500 3900
-Connection ~ 9500 3900
-Wire Wire Line
-	9500 3900 9500 2700
-Wire Wire Line
-	9400 4000 9500 4000
-Connection ~ 9500 4000
-Wire Wire Line
-	9500 4000 9500 3900
+	9750 2700 9400 2700
 NoConn ~ 7100 2700
 Text GLabel 4300 4400 2    50   Input ~ 0
 JOY_15
@@ -479,7 +455,7 @@ Connection ~ 3100 4650
 Wire Wire Line
 	3100 4650 3900 4650
 Wire Wire Line
-	6700 6050 9500 6050
+	6700 6050 9750 6050
 Wire Wire Line
 	6700 5300 7100 5300
 Connection ~ 6700 5300
@@ -503,4 +479,86 @@ NoConn ~ 7100 5500
 NoConn ~ 7100 5600
 NoConn ~ 7100 5700
 NoConn ~ 7100 5800
+Wire Wire Line
+	9750 3900 9750 2700
+Wire Wire Line
+	9400 3900 9750 3900
+Wire Wire Line
+	9400 4000 9750 4000
+Connection ~ 9750 3900
+Wire Wire Line
+	9750 4000 9750 3900
+Connection ~ 9750 4000
+Wire Wire Line
+	9750 6050 9750 4000
+$Comp
+L power:+5V #PWR04
+U 1 1 60764ECA
+P 9600 4900
+F 0 "#PWR04" H 9600 4750 50  0001 C CNN
+F 1 "+5V" H 9615 5073 50  0000 C CNN
+F 2 "" H 9600 4900 50  0001 C CNN
+F 3 "" H 9600 4900 50  0001 C CNN
+	1    9600 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L teensy:Teensy3.6 U1
+U 1 1 60563F5D
+P 8250 3650
+F 0 "U1" H 8250 6193 60  0000 C CNN
+F 1 "Teensy3.6" H 8250 6087 60  0000 C CNN
+F 2 "teensy:Teensy35_36" H 8250 5981 60  0000 C CNN
+F 3 "" H 8250 3700 60  0000 C CNN
+	1    8250 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 4900 9600 4900
+$Comp
+L Connector:Conn_01x03_Male J1
+U 1 1 607679C7
+P 2100 5650
+F 0 "J1" H 2208 5931 50  0000 C CNN
+F 1 "MON_PWR" H 2208 5840 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 2100 5650 50  0001 C CNN
+F 3 "~" H 2100 5650 50  0001 C CNN
+	1    2100 5650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR02
+U 1 1 6076A725
+P 1600 5500
+F 0 "#PWR02" H 1600 5350 50  0001 C CNN
+F 1 "+5V" H 1615 5673 50  0000 C CNN
+F 2 "" H 1600 5500 50  0001 C CNN
+F 3 "" H 1600 5500 50  0001 C CNN
+	1    1600 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 6076AFC6
+P 1600 5800
+F 0 "#PWR03" H 1600 5550 50  0001 C CNN
+F 1 "GND" H 1605 5627 50  0000 C CNN
+F 2 "" H 1600 5800 50  0001 C CNN
+F 3 "" H 1600 5800 50  0001 C CNN
+	1    1600 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 5550 1600 5550
+Wire Wire Line
+	1600 5550 1600 5500
+Wire Wire Line
+	1900 5650 1600 5650
+Wire Wire Line
+	1600 5650 1600 5550
+Connection ~ 1600 5550
+Wire Wire Line
+	1900 5750 1600 5750
+Wire Wire Line
+	1600 5750 1600 5800
 $EndSCHEMATC
