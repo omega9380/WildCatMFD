@@ -69,6 +69,9 @@ void setup() {
   // different default assumed values before your first button press.
   //  More details here:
   //  https://forum.pjrc.com/threads/29320-Teensy-3-1-Button-problems?p=80275#post80275
+
+Joystick.useManualSend(true);
+
 }
 
 void loop() {
@@ -225,5 +228,5 @@ void loop() {
   if (button20.risingEdge()) {
     Joystick.button(20, 0);
   }
-  
+ Joystick.send_now();
 }
