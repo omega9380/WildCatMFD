@@ -1,7 +1,7 @@
 #include "usb_names.h"
 
-#define PRODUCT_NAME    {'W','i','l','d','C','a','t',' ','M','F','D'}
-#define PRODUCT_NAME_LEN  11
+#define PRODUCT_NAME    {'W','i','l','d','C','a','t',' ','M','F','D',' ','2'}
+#define PRODUCT_NAME_LEN  13
 
 #define MANUFACTURER_NAME    {'J','e','r','e','m','y',' ','K','e','l','l','o','g','g'}
 #define MANUFACTURER_NAME_LEN  14
